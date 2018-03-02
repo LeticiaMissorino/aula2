@@ -1,0 +1,19 @@
+import java.rmi.Naming;
+
+public class AppPrincipal {
+	
+	public static void main(String[] args )
+	{
+		try {
+			IServicoRemoto objPessoa = (IServicoRemoto) Naming.lookup("rmi://localhost:8282/pessoa");
+			
+			Professor p1 = new Professor();
+			
+			
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+}
